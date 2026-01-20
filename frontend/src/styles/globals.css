@@ -1,0 +1,88 @@
+/* Life Coach App - Entry Point */
+
+/* Light theme */
+:root {
+  --background: 249 250 250;
+  --surface: 255 255 255;
+  --primary: 239 68 68;
+  --secondary: 239 100 100;
+  --success: 34 197 94;
+  --warning: 251  146 60;
+  --danger: 239 68 68;
+  --neutral: 107 114 128;
+  --neutral-50: 249 250 250;
+  --neutral-100: 255 255 255;
+  --neutral-200: 229 231 231;
+  --neutral-300: 209 213 219;
+  --border: 229 231 231;
+  --border-200: 229 231 231;
+  --border-300: 211 214 224;
+  --border-400: 156  163 175;
+  --text-neutral-900: 17 24 39;
+  --text-neutral-700: 33 33 41;
+  --text-neutral-600: 75 85 87;
+  --text-neutral-500: 107 114 128;
+  --text-neutral-400: 158 163 175;
+  --text-neutral-300: 209 213 219;
+  --text-primary-600: 37 99 235;
+  --text-secondary-600: 71 126 151;
+  --text-primary-500: 251 146 60;
+  --text-warning-600: 245 158 11;
+  --text-danger-600: 239 68 68;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --background: 17 24 39;
+  --surface: 39 40 42;
+  --primary: 59 130 246;
+  --secondary: 107 114 128;
+  --success: 74 222 128;
+  --warning: 220  38 68;
+  --danger: 220 38 68;
+  --neutral: 31 41 55;
+  --neutral-50: 39 40 42;
+  --neutral-100: 55 65 75;
+  --neutral-200: 31 41 55;
+  --neutral-300: 26 32 37;
+  --border: 55 65 75;
+  --border-300: 68 70 71;
+  --border-400: 113 114 128;
+  --text-neutral-900: 223 224 225;
+  --text-neutral-700: 209 210 211;
+  --text-neutral-600: 231 233;
+  --text-primary-600: 168 85 247;
+  --text-secondary-600: 107 114 128;
+  --text-primary-500: 131 146 60;
+  --text-warning-600: 202 100 52;
+  --text-danger-600: 220 38 68;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body {
+  @apply bg-neutral-50 text-neutral-900;
+  color-scheme: light;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -o-font-smoothing: auto;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-neutral-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-neutral-200);
+  border-radius: 4px;
+}
